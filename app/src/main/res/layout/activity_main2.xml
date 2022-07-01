@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80EFEBE7"
+    tools:context=".MainActivity2">
+
+    <RelativeLayout
+        android:id="@+id/top_relative"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#1777FF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="10.0dip"
+            android:singleLine="true"
+            android:text="设置"
+            android:textColor="#FFFFFFFF"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="84dp"
+        android:background="@drawable/shape_corner_screen"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/edittext"
+            android:layout_width="300dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/underline"
+            android:drawableLeft="@drawable/ic_assignment_black_24dp"
+            android:drawablePadding="10dp"
+            android:hint="请输入显示内容"
+            android:textColorHint="#95a1aa" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="96dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:text="显示"
+                android:textColor="#FF000000"
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="109dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="5dp"
+                android:text="关闭屏幕"
+                android:textColor="#FF000000"
+                android:textSize="20dp" />
+        </TableRow>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="控制"
+        android:textColor="#ff888888"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="415dp"
+        android:layout_marginTop="249dp"
+        android:background="@drawable/shape_corner"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/underline_setting">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                android:text="蜂鸣器:"
+                android:textColor="#CC000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/sw2"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="2dp"
+                android:showText="true"
+                android:splitTrack="true"
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/ic_adjust_black_24dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/underline_setting">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                android:text="照明灯:"
+                android:textColor="#CC000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/sw4"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="2dp"
+                android:showText="true"
+                android:splitTrack="true"
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/ic_adjust_black_24dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/underline_setting">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                android:text="温度检测:"
+                android:textColor="#CC000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/sw5"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="2dp"
+                android:showText="true"
+                android:splitTrack="true"
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/ic_adjust_black_24dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/underline_setting">
+
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                android:text="湿度检测:"
+                android:textColor="#CC000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/sw6"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="2dp"
+                android:showText="true"
+                android:splitTrack="true"
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/ic_adjust_black_24dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/underline_setting">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                android:text="光强检测:"
+                android:textColor="#CC000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/sw7"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="2dp"
+                android:showText="true"
+                android:splitTrack="true"
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/ic_adjust_black_24dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/underline_setting">
+
+            <TextView
+                android:layout_width="113dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                android:text="六轴检测:"
+                android:textColor="#CC000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/sw8"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="2dp"
+                android:showText="true"
+                android:splitTrack="true"
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/ic_adjust_black_24dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/underline_setting">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                android:text="wifi断连报警:"
+                android:textColor="#CC000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/sw10"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="83dp"
+                android:layout_marginTop="2dp"
+                android:showText="true"
+                android:splitTrack="true"
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/ic_adjust_black_24dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/underline_setting">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                android:text="远离报警:"
+                android:textColor="#CC000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/sw9"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="83dp"
+                android:layout_marginTop="2dp"
+                android:showText="true"
+                android:splitTrack="true"
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/ic_adjust_black_24dp" />
+        </TableRow>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="668dp"
+        android:background="@drawable/shape_corner"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="1dp"
+            android:background="#00FFFFFF">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="4dp"
+                android:text="低功耗模式:"
+                android:textColor="#CC000000"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <Switch
+                android:id="@+id/sw11"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="83dp"
+                android:layout_marginTop="2dp"
+                android:showText="true"
+                android:splitTrack="true"
+                android:textOff=""
+                android:textOn=""
+                android:thumb="@drawable/ic_adjust_black_24dp" />
+        </TableRow>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
